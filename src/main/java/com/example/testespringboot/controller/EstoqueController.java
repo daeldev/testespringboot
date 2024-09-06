@@ -32,6 +32,7 @@ public class EstoqueController {
         //Instancia o estoqueModel
         var estoqueModel = new EstoqueModel();
         BeanUtils.copyProperties(estoqueRecordDto, estoqueModel);
+//        retorna
         return ResponseEntity.status(HttpStatus.CREATED).body(estoqueRepository.save(estoqueModel));
     }
 }
