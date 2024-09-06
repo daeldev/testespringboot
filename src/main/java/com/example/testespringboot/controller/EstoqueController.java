@@ -27,7 +27,6 @@ public class EstoqueController {
     @Autowired
     EstoqueRepository estoqueRepository;
 
-//    Mapeia um método POST usando "/estoque" que vai receber um DTO do cliente
     @PostMapping("/estoque")
     public ResponseEntity<EstoqueModel> salvarEstoque(@RequestBody @Valid EstoqueRecordDto estoqueRecordDto){
         //Instancia o estoqueModel
